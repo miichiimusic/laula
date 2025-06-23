@@ -133,7 +133,7 @@ export default function FAQSection({ onOpenInstall }: FAQSectionProps) {
               lineHeight: "1.5",
             }}
           >
-            Still unsure? Try your new site for 14 days — no sign-up, no pressure. You’ll never go back to old-school
+            Try your new site for 14 days — no sign-up, no pressure. You’ll never go back to old-school
             web design.
           </p>
 

@@ -62,7 +62,7 @@ export default function WhyNotGitSection({ onOpenInstall }: WhyNotGitSectionProp
               textAlign: "center",
             }}
           >
-            We focus on vision. AI builds it better.
+            We focus on the vision. AI does the rest.
           </p>
         </div>
 
