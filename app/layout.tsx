@@ -3,12 +3,13 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { ThemeProvider } from "@/components/theme-provider"
 import { GeistSans } from "geist/font/sans"
+import LoadingScreen from "@/components/LoadingScreen"
 
 export const metadata: Metadata = {
   title: "LAULA - AI Web Design",
   description: "Undo AI mistakes instantly — save progress and restore with one click.",
   openGraph: {
-    title: "LAULA - AI Web Designl",
+    title: "LAULA - AI Web Design",
     description: "Undo AI mistakes instantly — save progress and restore with one click.",
     images: [
       {
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     apple: { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     other: [{ rel: "manifest", url: "/site.webmanifest" }],
   },
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -50,6 +51,7 @@ export default function RootLayout({
       </head>
       <body>
         <ThemeProvider attribute="class" defaultTheme="dark">
+          <LoadingScreen />
           {children}
         </ThemeProvider>
       </body>
